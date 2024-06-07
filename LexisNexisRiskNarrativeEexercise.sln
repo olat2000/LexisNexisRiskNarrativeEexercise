@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LexisNexisRiskNarrativeEexercise", "LexisNexisRiskNarrativeEexercise.csproj", "{BA9FA121-FBF0-4268-A9C2-BF782F0F1BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA9FA121-FBF0-4268-A9C2-BF782F0F1BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9FA121-FBF0-4268-A9C2-BF782F0F1BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9FA121-FBF0-4268-A9C2-BF782F0F1BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9FA121-FBF0-4268-A9C2-BF782F0F1BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1D36D3D-BC6B-447F-B117-3FF3E28B6445}
+	EndGlobalSection
+EndGlobal

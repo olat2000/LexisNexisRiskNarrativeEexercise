@@ -20,23 +20,23 @@ namespace LexisNexisRiskNarrativeEexercise.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Financial Services")]
-    public partial class FinancialServicesFeature
+    [NUnit.Framework.DescriptionAttribute("FinServResult")]
+    public partial class FinServResultFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "FinancialServices.feature"
+#line 1 "FinServResult.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Financial Services", "As a user\r\nI want to browse the LexisNexis website\r\nSo that I can read through th" +
-                    "e Financial Services home page", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "FinServResult", "As a user\r\nI want to browse the LexisNexis website\r\nSo that I can read the list o" +
+                    "f Financial Services home products", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,14 +75,14 @@ namespace LexisNexisRiskNarrativeEexercise.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify Financial Service page")]
-        [NUnit.Framework.CategoryAttribute("Lexisnexis")]
-        public void VerifyFinancialServicePage()
+        [NUnit.Framework.DescriptionAttribute("Verify Financial Services Result")]
+        [NUnit.Framework.CategoryAttribute("tag1")]
+        public void VerifyFinancialServicesResult()
         {
             string[] tagsOfScenario = new string[] {
-                    "Lexisnexis"};
+                    "tag1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Financial Service page", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Financial Services Result", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -94,25 +94,41 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 9
- testRunner.Given("Given user navigates to Lexisnexis website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("User opens the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Financial Services"});
+                table1.AddRow(new string[] {
+                            "Insurance"});
+                table1.AddRow(new string[] {
+                            "Life and Pensions"});
+                table1.AddRow(new string[] {
+                            "Corporations and Non-Profits"});
 #line 10
-  testRunner.Then("user will arrive on the Lexisnexis home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 11
- testRunner.When("user click choose your industry tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 12
- testRunner.And("user select one of the industry links", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 13
- testRunner.And("user click on view financial services home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 14
- testRunner.Then("user should see financial services home page displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("I verify the following on Home Page:", ((string)(null)), table1, "Then ");
 #line hidden
 #line 15
- testRunner.And("user verify Financial Services header is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.When("I expand Choose your industry accordion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 16
+    testRunner.And("I click Financial Services", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Financial Crime Compliance"});
+                table2.AddRow(new string[] {
+                            "Customer Data Management"});
+                table2.AddRow(new string[] {
+                            "Collections and Recovery"});
+                table2.AddRow(new string[] {
+                            "Risk Orchestration"});
+                table2.AddRow(new string[] {
+                            "Fraud and Identity Management"});
+                table2.AddRow(new string[] {
+                            "Credit Risk Assessment"});
+                table2.AddRow(new string[] {
+                            "Investigations and Due Diligence"});
+#line 17
+    testRunner.Then("I verify the following on Financial page:", ((string)(null)), table2, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

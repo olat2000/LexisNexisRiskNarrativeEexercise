@@ -1,5 +1,9 @@
 ﻿Feature: Financial Services
 
+As a user
+I want to browse the LexisNexis website
+So that I can read through the Financial Services home page
+
 @Lexisnexis
 Scenario:  Verify Financial Service page 
 	Given Given user navigates to Lexisnexis website
